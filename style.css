@@ -1,0 +1,25 @@
+body{
+background-color: #41a85f; 
+}
+
+img.pull-left {
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+/* img.pull-left execute une action à 0,5 seconde  */ 
+
+img.pull-left:hover {
+    -moz-transform: rotate(5deg) scale(1.10);
+    -webkit-transform: rotate(5deg) scale(1.10);
+    -o-transform: rotate(5deg) scale(1.10);
+    -ms-transform: rotate(5deg) scale(1.10);					
+    transform: rotate(5deg) scale(1.10);
+    opacity: 1;
+}
+/* fait une rotation de 5 degrés et zoom (scale) 10%  */ 
+
+
+
