@@ -1,5 +1,5 @@
 body{
-background-color: #41a85f; 
+background-color: #00a885; 
 }
 
 img.pull-left {
@@ -22,4 +22,8 @@ img.pull-left:hover {
 /* fait une rotation de 5 degrés et zoom (scale) 10%  */ 
 
 
-
+p, h1
+{
+    color : white;
+    text-align: center;
+}
