@@ -22,8 +22,29 @@ img.pull-left:hover {
 /* fait une rotation de 5 degrés et zoom (scale) 10%  */ 
 
 
-p, h1
+
+h1
 {
     color : white;
     text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+p
+{
+    color : white;
+    text-align: center;
+    text-align:justify;
+    width: 50%;
+    margin: auto;
+
+}
+
+
+hr{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+
 }
