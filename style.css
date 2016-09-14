@@ -23,12 +23,14 @@ img.pull-left:hover {
 
 
 
-h1
+h1, h2, h6
 {
     color : white;
     text-align: center;
     width: 50%;
     margin: auto;
+    font-style: bold;
+    text-shadow: 2px 2px 2px grey;
 }
 
 p
@@ -47,4 +49,46 @@ hr{
     width: 80%;
     margin: auto;
 
+}
+
+#nav {
+    padding: 0; margin: 0;
+    text-align: center;
+}
+#nav li {
+    display: inline;
+    list-style: none;
+}
+#nav a {
+    display:inline-block;
+    margin: 0 30px;
+}
+
+
+img.icon {
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+img.icon:hover {
+    -moz-transform: rotate(360deg) scale(1.10);
+    -webkit-transform: rotate(360deg) scale(1.10);
+    -o-transform: rotate(360deg) scale(1.10);
+    -ms-transform: rotate(360deg) scale(1.10);
+    transform: rotate(360deg) scale(1.10);
+}
+
+#alert alert-info{
+    text-align: center;
+    text-align:justify;
+}
+
+h3{
+    color : black;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    text-shadow: 1px 1px 1px grey;
 }
