@@ -59,6 +59,7 @@ hr{
     display: inline;
     list-style: none;
 }
+
 #nav a {
     display:inline-block;
     margin: 0 30px;
@@ -80,7 +81,7 @@ img.icon:hover {
     transform: rotate(360deg) scale(1.10);
 }
 
-#alert alert-info{
+.alert alert-info{
     text-align: center;
     text-align:justify;
 }
@@ -92,3 +93,5 @@ h3{
     margin: auto;
     text-shadow: 1px 1px 1px grey;
 }
+
+
