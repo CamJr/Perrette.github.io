@@ -8,7 +8,7 @@
         <!-- Latest compiled and minified Bootstrap JavaScript + JQuery -->
         	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        	<link rel="stylesheet" href="style.css" />
+        	<link rel="stylesheet" href="style.css">
     		</head>
 
         <body>
@@ -26,9 +26,11 @@
                     <!-- Panier-->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <button type="button" class="btn btn-warning navbar-btn">
-                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Panier
+                        	<a href="https://drive.google.com/file/d/0BywcJRfHApzGNzJDaFVpSzNNU00/view?usp=sharing" target="_blank">
+                            <button type="button" value="bouton" class="btn btn-warning navbar-btn">
+                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Commander
                             </button>
+                            </a>
                         </ul>
 					</div>
                 </div>
@@ -77,7 +79,8 @@
                 <p><strong>L</strong>a Ferme de Perrette se situe à 5 km de La Loupe et à 20 km de Sergent le Grotrou. C'est dans cet immense corps de ferme typique de la région que Perette, 46 ans, élève ses vaches en plein air. Cette ancienne ferme du XVème siècle n'a jamais cessé d'être un havre dédié à l'elevage. C'est en observant les gestes de son père et de son grand-père que Perrette s'est naturellement tournée vers l'agriculture et la fabrication de produits laitiers.</p>
             <br/>
                 <p><strong>N</strong>'hésitez pas à venir la voir en famille, Perrette trouve toujours du temps pour présenter ses amours et sa ferme dont elle est très fière.  Les vaches de Perrette jouissent d'un cadre et de conditions d'élevages exceptionnels. C'est dans un espace hydillique, entouré par 15 hectares de bois et de prés valonnés, reculé et bucolique que ses vaches broutent l'herbe la plus frâiche qui soit.</p>
-
+                <div id="produits"></div>
+            <br/>
             <br/>
             <hr/>
             <br/>           
@@ -95,7 +98,7 @@
                                 <h3>Lait</h3>
                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".socks1">
                                     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                                    Commander</button>
+                                    Voir</button>
                             </div>
                         </div>
                     </div>
@@ -107,12 +110,9 @@
                                     <h3>Lait cru</h3>
                                     <img src="picture/lait.jpg" alt="lait" class="responsive">
                                     <div class="caption">
-                                        <p class="alert alert-info">Lait cru, bouteille en verre, 1L</p>
+                                        <p class="alert alert-info" id="centrage">Lait cru, bouteille en verre, 1L</p>
                                         <span class="strong">1,5<span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
-                                        </span>
-                                        <a href="#" class="btn btn-success" role="button">
-                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                                        	Ajouter</a>
+                                        </span>                                        
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +127,7 @@
                                 <h3>Crème</h3>
                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".socks2">
                                     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                                    Commander</button>
+                                    Voir</button>
                             </div>
                         </div>
                     </div>
@@ -142,9 +142,6 @@
                                         <p class="alert alert-info">Crème frâiche épaisse, 250mL</p>
                                         <span class="strong">5<span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
                                         </span>
-                                        <a href="#" class="btn btn-success" role="button">
-                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                                            Ajouter</a>
                                     </div>
                                 </div>
                             </div>
@@ -159,7 +156,7 @@
                                 <h3>Yaourts</h3>
                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".socks3">
                                     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                                    Commander</button>
+                                    Voir</button>
                             </div>
                         </div>
                     </div>
@@ -174,9 +171,6 @@
                                         <p class="alert alert-info"> Six pots de 125 mL</p>
                                         <span class="strong">5<span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
                                         </span>
-                                        <a href="#" class="btn btn-success" role="button">
-                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                                            Ajouter</a>
                                     </div>
                                 </div>
                             </div>
@@ -191,7 +185,7 @@
                                 <h3>Fromage</h3>
                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".socks4">
                                     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                                    Commander</button>
+                                    Voir</button>
                             </div>
                         </div>
                     </div>
@@ -206,10 +200,6 @@
                                         <p class="alert alert-info">Fromage au lait de vache cru, 200g</p>
                                         <span class="strong">5<span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
                                         </span>
-                                        <a href="#" class="btn btn-success" role="button">
-                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                                            Ajouter</a>
-
                                     </div>
                                 </div>
                             </div>
@@ -246,10 +236,10 @@
                                     <h3>Gisèle la diabolique</h3>
                                     <img src="picture/gisele.jpg" alt="Gisele" class="responsive">
                                     <div class="caption">
-                                        <p class="alert alert-info">Elle a les yeux revolver, elle a le regard qui tue!</p>
+                                        <p id=class="alert alert-info">Elle a les yeux revolver, elle a le regard qui tue!</p>
                                         <a href="#" class="btn btn-success" role="button">
                                             <span class="glyphicon glyphicon-thumbs-up-" aria-hidden="true"></span>
-                                        	Voter</a>
+                                        	Vote pour moi!</a>
                                     </div>
                                 </div>
                             </div>
@@ -279,7 +269,7 @@
                                         <p class="alert alert-info">Toujours à faire des farces cette Gertrude!</p>
                                         <a href="#" class="btn btn-success" role="button">
                                             <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-                                            Voter</a>
+                                            Vote pour moi!</a>
                                     </div>
                                 </div>
                             </div>
@@ -309,7 +299,7 @@
                                         <p class="alert alert-info">Pour ceux qui aiment les vaches de caractère!</p>
                                         <a href="#" class="btn btn-success" role="button">
                                             <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-                                            Voter</a>
+                                            Vote pour moi!</a>
                                     </div>
                                 </div>
                             </div>
@@ -339,7 +329,7 @@
                                         <p class="alert alert-info">Si élégante qu'on la confond parfois avec une gazelle!</p>
                                         <a href="#" class="btn btn-success" role="button">
                                             <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-                                            Voter</a>
+                                            Vote pour moi!</a>
                                     </div>
                                 </div>
                             </div>
@@ -357,10 +347,10 @@
                 <h1>Nous contacter</h1>
                         <br/>
                         <ul id="nav">
-                              <li><a href="#" tit><img class="icon" src="picture/phone.png" alt="mail" height="30" width="30"  /></a></li>
-                              <li><a href="#" title="Email"><img class="icon" src="picture/mail.png" alt="phone" height="30" width="30"  /></a></li>
+                              <li><a href="#" tit><img title="Téléphone" class="icon" src="picture/phone.png" alt="mail" height="30" width="30"  /></a></li>
+                              <li><a href="#" title="E-mail"><img class="icon" src="picture/mail.png" alt="phone" height="30" width="30"  /></a></li>
                               <li><a href="https://www.facebook.com/" title="Facebook"><img class="icon" src="picture/facebook.png" alt="facebook" height="30" width="30"  /></a></li>
-                              <li><a href="https://drive.google.com/open?id=1vy-YmvVwvyifMrsFck5Y2XUzEfQ&usp=sharing" title="pin"><img class="icon" src="picture/pin.png" alt="pin" height="30" width="30"></a></li>
+                              <li><a href="https://drive.google.com/open?id=1vy-YmvVwvyifMrsFck5Y2XUzEfQ&usp=sharing" title="Adresse"><img class="icon" src="picture/pin.png" alt="pin" height="30" width="30"></a></li>
                         </ul>
                       <br/>
 
